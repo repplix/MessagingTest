@@ -21,11 +21,10 @@ class ArchitectureTest {
     {
         portsAndAdapters(MessagingTest.class)
                 // Add all packages providing driven adapter
-                .addDrivenAdapterPackage("persistence")
                 .addDrivenAdapterPackage("messaging")
 
                 // Add all packages providing driving adapter such as
-                // .addDrivingAdapterPackage("messaging")
+                .addDrivingAdapterPackage("messaging")
 
                 .validate();
     }

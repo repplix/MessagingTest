@@ -1,6 +1,6 @@
 package com.github.repplix.infrastructure.drivenadapter.messaging;
 
-import com.github.repplix.domain.book.BookSoldOut;
+import com.github.repplix.domain.TestDomainEvent;
 import com.github.repplix.domainservice.DomainEventSender;
 import io.jexxa.addend.infrastructure.DrivenAdapter;
 import io.jexxa.infrastructure.messaging.MessageSender;
@@ -23,12 +23,12 @@ public class DomainEventSenderImpl implements DomainEventSender
     }
 
     @Override
-    public void publish(BookSoldOut domainEvent)
+    public void publish(TestDomainEvent domainEvent)
     {
         Objects.requireNonNull(domainEvent);
         messageSender
                 .send(domainEvent)
-                .toTopic("BookStoreTopic")
+                .toTopic("MessagingTest")
                 .addHeader("Type", domainEvent.getClass().getSimpleName())
                 .asJson();
     }

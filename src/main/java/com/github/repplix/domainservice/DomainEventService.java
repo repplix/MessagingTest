@@ -2,7 +2,7 @@ package com.github.repplix.domainservice;
 
 
 import com.github.repplix.domain.DomainEventPublisher;
-import com.github.repplix.domain.book.BookSoldOut;
+import com.github.repplix.domain.TestDomainEvent;
 import io.jexxa.addend.applicationcore.DomainEventHandler;
 import io.jexxa.addend.applicationcore.DomainService;
 
@@ -15,11 +15,11 @@ public class DomainEventService
     public DomainEventService(DomainEventSender domainEventSender)
     {
         this.domainEventSender = domainEventSender;
-        DomainEventPublisher.subscribe(BookSoldOut.class, this::handleEvent);
+        DomainEventPublisher.subscribe(TestDomainEvent.class, this::handleEvent);
     }
 
     @DomainEventHandler
-    public void handleEvent(BookSoldOut domainEvent)
+    public void handleEvent(TestDomainEvent domainEvent)
     {
         domainEventSender.publish(domainEvent);
     }
