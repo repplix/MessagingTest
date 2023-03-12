@@ -4,7 +4,7 @@ services:
 
   ### Application ###
   MessagingTest:
-    image: ghcr.io/repplix/messaging:latest
+    image: ghcr.io/repplix/messagingtest:latest
     ports:
       - "7600:7500"
     depends_on:
