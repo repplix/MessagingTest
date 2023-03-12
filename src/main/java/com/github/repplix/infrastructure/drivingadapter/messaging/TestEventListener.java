@@ -16,7 +16,7 @@ public class TestEventListener extends IdempotentListener<TestDomainEvent> {
     }
 
     @Override
-    @JMSConfiguration(destination = "MessagingTest", messagingType = JMSConfiguration.MessagingType.TOPIC )
+    @JMSConfiguration(destination = "MessagingTest", messagingType = JMSConfiguration.MessagingType.TOPIC, sharedSubscriptionName = "MessagingTest")
     public void onMessage(TestDomainEvent message) {
         // We need just to receive the message
     }
