@@ -25,6 +25,7 @@ class ArchitectureTest {
 
                 // Add all packages providing driving adapter such as
                 .addDrivingAdapterPackage("messaging")
+                .addDrivingAdapterPackage("schedule")
 
                 .validate();
     }
