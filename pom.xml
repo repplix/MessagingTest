@@ -7,7 +7,7 @@
   <name>MessagingTest</name>
   <groupId>com.github.repplix</groupId>
   <artifactId>messagingtest</artifactId>
-  <version>0.1.2-SNAPSHOT</version>
+  <version>0.1.2</version>
 
   <url>https://www.jexxa.io</url>
 
@@ -29,7 +29,7 @@
     <connection>scm:git:https://github.com/repplix/MessagingTest.git</connection>
     <url>https://github.com/repplix/MessagingTest</url>
     <developerConnection>scm:git:https://github.com/repplix/MessagingTest.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>messagingtest-0.1.2</tag>
   </scm>
 
   <properties>
