@@ -1,5 +1,5 @@
-[![Maven Test Build](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/mavenBuild.yml/badge.svg)](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/mavenBuild.yml)
-[![New Release](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/newRelease.yml/badge.svg)](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/newRelease.yml)
+[![Maven Test Build](https://github.com/repplix/MessagingTest/actions/workflows/mavenBuild.yml/badge.svg)](https://github.com/repplix/MessagingTest/actions/workflows/mavenBuild.yml)
+[![New Release](https://github.com/repplix/MessagingTest/actions/workflows/newRelease.yml/badge.svg)](https://github.com/repplix/MessagingTest/actions/workflows/newRelease.yml)
 
 # JexxaTemplate
 This template can be used to start your own Jexxa application 
@@ -15,12 +15,12 @@ This template can be used to start your own Jexxa application
 
 *   Build your first Jexxa-project as self-contained jar and/or docker image
     
-*   Template for [Unit-](src/test/java/io/jexxa/jexxatemplate/domain/book/BookTest.java), [Stub-](src/test/java/io/jexxa/jexxatemplate/applicationservice/BookStoreServiceTest.java) and [Integration tests](src/test/java/io/jexxa/jexxatemplate/integration/JexxaTemplateIT.java)
+*   Template for [Unit-](src/test/java/com/github/repplix/domain/book/BookTest.java), [Stub-](src/test/java/com/github/repplix/applicationservice/BookStoreServiceTest.java) and [Integration tests](src/test/java/com/github/repplix/integration/MessagingTestIT.java)
 
 *   Predefined architectural tests for: 
-    *   [Pattern Language](src/test/java/io/jexxa/jexxatemplate/architecture/ArchitectureTest.java) to validate the correct annotation of your application using project [Addend](http://addend.jexxa.io/) 
-    *   [Ports&Adapters Architecture](src/test/java/io/jexxa/jexxatemplate/architecture/ArchitectureTest.java) to validate dependencies between packages of your application
-    *   [Usage of Aggregates](src/test/java/io/jexxa/jexxatemplate/architecture/ArchitectureTest.java) to validate that your business logic is not exposed
+    *   [Pattern Language](src/test/java/com/github/repplix/architecture/ArchitectureTest.java) to validate the correct annotation of your application using project [Addend](http://addend.jexxa.io/) 
+    *   [Ports&Adapters Architecture](src/test/java/com/github/repplix/architecture/ArchitectureTest.java) to validate dependencies between packages of your application
+    *   [Usage of Aggregates](src/test/java/com/github/repplix/architecture/ArchitectureTest.java) to validate that your business logic is not exposed
 
 *   Predefined CI/CD pipeline for GitHub including automatic dependency updates 
  
